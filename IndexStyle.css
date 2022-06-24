@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+:root{
+    --red: #e50914;
+    --black:#000000;
+    --light-color:#181818;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+       
+}
+
+
+*{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-padding-top: 5.5rem;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: var(--box-shadow);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:10000;
+    box-shadow:var(--box-shadow);
+}
+ header .logo{
+      color:dimgray;
+      font-size: 3rem;
+      font-weight: bolder;
+ }
+
+ header .logo i:hover{
+     transform:rotate(360deg);
+ }
+
+
+ header .navbar .active,
+ header .navbar .BigAnime,
+ header .navbar .BigMovies,
+ header .navbar .BigStudies,
+ header .navbar .BigCoding{
+     font-size: 3rem;
+     border-radius: 1rem;
+     padding: .5rem 5rem;
+     color:grey;
+ 
+ }
+
+ header .Smallbars .active2,
+header .Smallbars .SmallAnime,
+header .Smallbars .SmallMovies,
+header .Smallbars .SmallStudies,
+header .Smallbars .SmallCoding{
+    font-size: 3.5rem;
+    border-radius: 1rem;
+    padding: .5rem 4rem;
+    display: block;
+    color:grey;
+    display: none;
+
+}
+
+header .Smallbars .active2{
+    color:white;
+     background: darkgray;
+    font-size: 3.5rem;
+    border-radius: 1rem;
+    padding: .5rem 4rem;
+    display: none;
+}
+
+
+header .Smallbars .SmallAnime:hover,
+header .Smallbars .SmallMovies:hover,
+header .Smallbars .SmallStudies:hover,
+header .Smallbars .SmallCoding:hover{
+    color:white;
+     background: darkgray;
+}
+ header .navbar a:hover{
+     color:white;
+     background: darkgray;     
+ }
+
+ header .navbar a.active{
+     color:white;
+     background:darkgray;
+ }
+
+ header .icons i,
+ header .icons a{
+     cursor : pointer;
+     margin-left: .5rem;
+     height:4.5rem;
+     line-height:4.5rem;
+     width:4.5rem;
+     text-align:center;
+     font-size: 3rem;
+     color:dimgray;
+     border-radius: 40%;
+     background:var(--box-shadow);
+ }
+ header .icons i:hover,
+ header .icons a:hover{
+     color: white;
+     background: darkgray;
+     transform: rotate(360deg);
+ }
+ 
+.Home .background{
+   max-height: 1400px; 
+   max-width: 1700px;
+   display:inline-flex;
+   align-items:center;
+   background:cover;
+   background-position:center;
+   justify-content:flex-end;
+   border-bottom-left-radius: 10%;
+   border-bottom-right-radius: 10%;
+}
+
+@media (max-width:1230px){
+    header .navbar{
+        display: none;
+    }
+    header .Smallbars .active2,
+    header .Smallbars .SmallAnime,
+    header .Smallbars .SmallMovies,
+    header .Smallbars .SmallStudies,
+    header .Smallbars .SmallCoding{
+        display: block;
+    }
+
+    .Home{
+         display: none;
+    }
+
+    .List{
+         display: none;
+    }
+    .copyright .logo,
+    .copyright #worning,
+    .copyright p{
+        display: none;
+    }
+
+}
+
+.copyright{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     
+ 
+
+
+ 
